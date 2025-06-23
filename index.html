@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo OPEN Neón</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial Rounded MT Bold', 'Comic Sans MS', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+            margin-bottom: 30px;
+        }
+        
+        /* Secciones */
+        .section {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 2px solid #00ffff;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #ff00ff;
+            text-shadow: 0 0 5px #fff;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title span {
+            margin-right: 10px;
+        }
+        
+        /* Productos */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .product {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s;
+            border: 1px solid #ff00ff;
+        }
+        
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+        }
+        
+        .product-name {
+            font-size: 1.5em;
+            color: #00ffff;
+            margin: 0 0 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .product-desc {
+            font-size: 0.9em;
+            line-height: 1.4;
+            min-height: 60px;
+        }
+        
+        .product-specs {
+            background: rgba(0, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.8em;
+        }
+        
+        /* QR y CTA */
+        .qr-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+        
+        .qr-code {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .cta {
+            display: block;
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            color: #000;
+            text-align: center;
+            padding: 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 300px;
+            font-size: 1.2em;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+        }
+        
+        .cta:hover {
+            animation: pulse 1s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+        
+        /* Efectos especiales */
+        .neon-text {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">¡Tu negocio merece un OPEN <i>POP</i>! 💥</h1>
+        
+        <!-- Sección OPEN Clásicos -->
+        <div class="section">
+            <h2 class="section-title"><span>🔵</span> OPEN Clásicos</h2>
+            <div class="products">
+                <div class="product">
+                    <h3 class="product-name"><span class="emoji">✨</span> OPEN Classic</h3>
+                    <p class="product-desc">El eterno favorito: brillo rojo intenso que nunca pasa de moda. ¡Como un faro para tus clientes!</p>
+                    <div class="product-specs">
+                        <p><strong>🌡️ Color:</strong> Rojo neón</p>
+                        <p><strong>📏 Tamaño:</strong> 50cm, 80cm o 120cm</p>
+                        <p><strong>⚡ Energía:</strong> 12V LED</p>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <h3 class="product-name"><span class="emoji">🟢</span> OPEN Retro</h3>
+                    <p class="product-desc">Inspirado en los años 80, con tipografía vintage y un verde que grita "¡Entra, tenemos buen rollo!"</p>
+                    <div class="product-specs">
+                        <p><strong>🌡️ Color:</strong> Verde lima</p>
+                        <p><strong>📏 Tamaño:</strong> 60cm o 100cm</p>
+                        <p><strong>⚡ Energía:</strong> 12V LED</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección OPEN Locos -->
+        <div class="section">
+            <h2 class="section-title"><span>🌈</span> OPEN Locos</h2>
+            <div class="products">
+                <div class="product">
+                    <h3 class="product-name"><span class="emoji">🔥</span> OPEN Fuego</h3>
+                    <p class="product-desc">¿Quieres que tu negocio arda en... popularidad? Este OPEN tiene llamas neón que (no) queman.</p>
+                    <div class="product-specs">
+                        <p><strong>🌡️ Color:</strong> Rojo + Amarillo (efecto fuego)</p>
+                        <p><strong>📏 Tamaño:</strong> 70cm</p>
+                        <p><strong>⚡ Energía:</strong> 24V LED RGB</p>
+                    </div>
+                </div>
+                
+                <div class="product">
+                    <h3 class="product-name"><span class="emoji">🦄</span> OPEN Rainbow</h3>
+                    <p class="product-desc">Cambia de color como camaleón en discoteca. ¡Perfecto para negocios con mucha personalidad!</p>
+                    <div class="product-specs">
+                        <p><strong>🌡️ Color:</strong> RGB automático</p>
+                        <p><strong>📏 Tamaño:</strong> 50cm o 80cm</p>
+                        <p><strong>⚡ Energía:</strong> 12V LED RGB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección Personalizados -->
+        <div class="section">
+            <h2 class="section-title"><span>🎨</span> OPEN Personalizados</h2>
+            <p>¿No encuentras tu OPEN ideal? ¡Lo creamos para ti! Diseña tu letrero con:</p>
+            <ul>
+                <li>Tipografía exclusiva</li>
+                <li>Combinación de colores</li>
+                <li>Efectos especiales (parpadeo, fade, etc.)</li>
+                <li>Formas únicas (corazones, estrellas, lo que imagines)</li>
+            </ul>
+            <a href="#contacto" class="cta">¡Diseña tu OPEN! ✏️</a>
+        </div>
+        
+        <!-- QR Code -->
+        <div class="qr-container">
+            <h3 class="neon-text">Escanea para ver más modelos en acción</h3>
+            <!-- QR code generado con https://goqr.me/ (enlace simulado) -->
+            <div class="qr-code">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://ejemplo.com/catalogo-open" alt="QR Code" width="150" height="150">
+            </div>
+            <p>Usa tu móvil para descubrir modelos exclusivos</p>
+        </div>
+        
+        <!-- Testimonios -->
+        <div class="section">
+            <h2 class="section-title"><span>💬</span> Lo que dicen nuestros clientes</h2>
+            <div class="products">
+                <div class="product">
+                    <p>"Mi OPEN Rainbow es la estrella de mi cafetería. ¡Los clientes vienen solo para tomarle fotos!"</p>
+                    <p><strong>— Carla, Café Mágico</strong> ☕</p>
+                </div>
+                <div class="product">
+                    <p>"El OPEN Fuego hace que mi barbería se vea 200% más cool. ¡Hasta mis abuelos quieren uno!"</p>
+                    <p><strong>— Tony, Barbería Clásica</strong> ✂️</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2023 OPEN Neón | Ilumina tu negocio con estilo</p>
+            <p>📞 Llama al: 555-OPEN-NEON | 📍 Calle Brillante 123, Ciudad Luz</p>
+        </footer>
+    </div>
+</body>
+</html>
